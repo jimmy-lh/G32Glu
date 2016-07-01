@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- android:fillAfter="true"用在这儿不知道怎么会没用,加到java代码才有用 -->
+    <translate
+        android:duration="700"
+        android:fromXDelta="0%p"
+        android:toXDelta="15%p" />
+
+</set>

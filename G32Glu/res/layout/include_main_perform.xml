@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main_perform"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:visibility="gone" >
+
+    <FrameLayout
+        android:id="@+id/layout_main_hint"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_above="@+id/layout_main_measure_finish"
+        android:background="@color/bantouming1" >
+
+        <TextView
+            android:id="@+id/txt_main_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="血糖过低,请注意保养"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_main_measure_finish"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/bantouming1" >
+
+        <Button
+            android:id="@+id/btn_main_measure_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/measure_finish"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+</RelativeLayout>

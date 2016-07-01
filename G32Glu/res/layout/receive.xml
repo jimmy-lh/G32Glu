@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bioland_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:text="@string/hint_trigger"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/img_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/star"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_test_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/test_paper"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/temp_name_font"
+                android:text="@string/sn" />
+
+            <TextView
+                android:id="@+id/txt_sn_value"
+                style="@style/temp_value_font" />
+
+            <TextView style="@style/temp_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/temp_name_font"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/txt_time_value"
+                style="@style/temp_value_font" />
+
+            <TextView style="@style/temp_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/temp_name_font"
+                android:text="@string/temp" />
+
+            <TextView
+                android:id="@+id/txt_temp_value"
+                style="@style/temp_value_font"
+                android:layout_marginTop="1dp" />
+
+            <TextView
+                style="@style/temp_font"
+                android:text="@string/temp_unit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/temp_name_font"
+                android:text="@string/value" />
+
+            <TextView
+                style="@style/temp_font"
+                android:text="@string/value_unit" />
+
+            <TextView
+                style="@style/temp_font"
+                android:text="@string/value_unit_mg" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/yt2_glu_value_num0"
+            layout="@layout/yt2_glu_value" />
+
+        <include
+            android:id="@+id/yt2_glu_value_num1"
+            layout="@layout/yt2_glu_value" />
+
+        <include
+            android:id="@+id/yt2_glu_value_num2"
+            layout="@layout/yt2_glu_value" />
+
+        <include
+            android:id="@+id/yt2_glu_value_num3"
+            layout="@layout/yt2_glu_value" />
+
+        <include
+            android:id="@+id/yt2_glu_value_num4"
+            layout="@layout/yt2_glu_value" />
+
+        <CheckBox
+            android:id="@+id/mode_check_blood"
+            style="@style/mode_check_font"
+            android:checked="true"
+            android:text="@string/mode1"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/mode_check_value"
+            style="@style/mode_check_font"
+            android:text="@string/mode2"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/mode_check_resistance"
+            style="@style/mode_check_font"
+            android:text="@string/mode3"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hint_version"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

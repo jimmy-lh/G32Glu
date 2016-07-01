@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <!-- 此处以文本为参考，img放在文本的左边，这样设置就可避免因文本太长自动变成两行的问题 -->
+            <TextView
+                android:id="@+id/remind_dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/remind_dialog_message"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/remind_dialog_message"
+                android:src="@drawable/remind_dialog_clock" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd0d0d0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/remind_dialog_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_remind_positiveButton"
+                style="@style/text_15_ffffff_sdw"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/remind_btn_ok_selector"
+                android:gravity="center"
+                android:text="@string/remind_dialog_ok" />
+
+            <Button
+                android:id="@+id/btn_remind_negativeButton"
+                style="@style/text_15_666666_sdw"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/remind_btn_cancel_selector"
+                android:gravity="center"
+                android:text="@string/remind_dialog_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/txt_record_head"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/record_dinner" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ThinBlack" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_record_head"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/record_before" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ThinBlack" />
+
+        <TextView
+            style="@style/txt_record_head"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/record_after" />
+    </LinearLayout>
+
+</LinearLayout>

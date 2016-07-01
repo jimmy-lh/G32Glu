@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_more_system"
+    style="@style/bg_rim_branch"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/more_1" />
+
+    <TextView
+        style="@style/txt_more_menu"
+        android:text="@string/more_system" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/arrows" />
+
+</LinearLayout>

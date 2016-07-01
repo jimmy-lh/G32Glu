@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_wlan_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wlan_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/txt_wlan_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/color_txt_wlan"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/signal_strenth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/color_txt_wlan"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_wlan_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,315 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- G32 -->
+    <style name="title_color">
+        <item name="android:background">@color/theme_color</item>
+    </style>
+
+    <style name="popup_bg_color">
+        <item name="android:background">@color/White</item>
+    </style>
+
+    <style name="title_text_font">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="hint_text_font">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="line_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/DarkGray</item>
+    </style>
+
+    <style name="line_vertical_remind_time">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/gradient_remind_vertical_bg</item>
+    </style>
+
+    <style name="line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/DarkGray</item>
+    </style>
+
+    <style name="line_horizontal_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/DarkGray</item>
+    </style>
+
+    <style name="wave_size">
+        <item name="android:layout_width">188dp</item>
+        <item name="android:layout_height">188dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/wave</item>
+    </style>
+
+    <!-- PopupWindow窗口动画 -->
+    <style name="MenuAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/menu_fadein</item>
+        <item name="android:windowExitAnimation">@anim/menu_fadeout</item>
+    </style>
+
+    <!-- 黑线边框   @drawable/target_input_bg -->
+    <style name="bg_rim">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/more_menu_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="bg_rim_branch">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/more_menu_bg_branch</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 黑线边框   @drawable/target_input_bg 提醒时间保存的控件边框 -->
+    <style name="bg_rim_remind_add">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/more_menu_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="txt_more_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/Black1</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="txt_remind_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="txt_record_group_num">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:width">30sp</item>
+    </style>
+
+    <style name="txt_record_head_time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ThinBlack1</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="txt_record_head_state">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black2</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="txt_record_head">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black2</item>
+    </style>
+
+    <style name="txt_record_head_state_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="line_record_group_gradient_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:background">@drawable/gradient_record_vertical_bg</item>
+    </style>
+
+    <style name="line_record_child_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="line_record_child_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="line_record_details_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="line_record_details_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="record_details_time_dialog_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:src">@drawable/btn_radio_off</item>
+    </style>
+
+    <style name="record_details_time_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- end -->
+
+
+    <!-- remind_dialog -->
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- end -->
+
+
+    <!-- 暂时没用 -->
+    <style name="page_title">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@color/theme_color</item>
+    </style>
+
+    <style name="yt2_value_num_font">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="yt2_value_font">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@color/CornflowerBlue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="temp_name_font">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="temp_value_font">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@color/CornflowerBlue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="temp_font">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="mode_check_font">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <!-- end -->
+
+</resources>

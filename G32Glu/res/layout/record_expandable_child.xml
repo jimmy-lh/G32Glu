@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/expandable_selector_item"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_record_child_time"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="03/28" />
+
+        <TextView
+            android:id="@+id/txt_record_child_hide_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="03/28" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_beforebreakfast"
+            android:layout_width="38.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_afterbreakfast"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_beforelunch"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_afterlunch"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_beforedinner"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_afterdinner"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <View style="@style/line_record_child_vertical" />
+
+        <TextView
+            android:id="@+id/txt_record_child_sleep"
+            android:layout_width="36.5dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View style="@style/line_record_child_horizontal" />
+
+</LinearLayout>

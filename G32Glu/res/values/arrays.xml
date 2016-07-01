@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- record_details_time_dialog -->
+    <string-array name="record_details_dialog">
+        <item>@string/record_details_time_before_breakfast</item>
+        <item>@string/record_details_time_after_breakfast</item>
+        <item>@string/record_details_time_before_lunch</item>
+        <item>@string/record_details_time_after_lunch</item>
+        <item>@string/record_details_time_before_dinner</item>
+        <item>@string/record_details_time_after_dinner</item>
+        <item>@string/record_details_time_before_sleep</item>
+    </string-array>
+
+</resources>

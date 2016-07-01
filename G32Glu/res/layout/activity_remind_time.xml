@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" >
+
+        <ImageView
+            android:id="@+id/arrow_return"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/arrow_return"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/title_text_font"
+            android:text="@string/remind_set_time" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <com.bioland.view.timeselect.TimeSelectHourView
+                        android:id="@+id/timeHourView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/remind_hour"
+                        android:textColor="@color/remind_blue" />
+                </FrameLayout>
+
+                <View style="@style/line_vertical_remind_time" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <com.bioland.view.timeselect.TimeSelectMinuteView
+                        android:id="@+id/timeMinuteView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/remind_minute"
+                        android:textColor="@color/remind_blue" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bg" >
+
+        <Button
+            android:id="@+id/btn_remind_finish"
+            style="@style/txt_remind_button"
+            android:background="@drawable/remind_btn_bg"
+            android:text="@string/remind_finish" />
+    </FrameLayout>
+
+</LinearLayout>

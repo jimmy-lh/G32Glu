@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <!--
+     android:groupIndicator="@null" 取消默认图片
+     android:childIndicatorLeft 设置孩子左边间距
+     android:dividerHeight 这个高度一定要设置，不然显示不出来分割线，估计默认为0 吧
+     android:childDivider="@drawable/child_bg" 这个直接引color,或者图片会导致整个孩子背景都为这个颜色
+    -->
+
+    <LinearLayout
+        android:id="@+id/sticky_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <com.bioland.view.expandable.PinnedHeaderExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:childDivider="@drawable/gradient_horizontal_bg"
+            android:childIndicatorLeft="0dp"
+            android:divider="@null"
+            android:fastScrollEnabled="false"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="none" >
+        </com.bioland.view.expandable.PinnedHeaderExpandableListView>
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/record_progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/record_progressbar_animator"
+        android:visibility="gone"
+        android:indeterminateDuration="1000" />
+
+</RelativeLayout>

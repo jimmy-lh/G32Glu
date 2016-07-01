@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <ImageView
+        android:id="@+id/record_details_reason_right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/record_details_right_normal" />
+
+    <ImageView
+        android:id="@+id/record_details_reason_pic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/record_details_normal2" />
+
+    <TextView
+        android:id="@+id/txt_record_details_reason2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_details_reason_pic2"
+        android:layout_centerInParent="true"
+        android:text="@string/record_details_medicine"
+        android:textSize="17sp" />
+
+</RelativeLayout>

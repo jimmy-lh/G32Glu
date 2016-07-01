@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white1" >
+
+    <LinearLayout
+        android:id="@+id/layout_record_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <include layout="@layout/include_record_time" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ThinBlack" />
+
+        <include layout="@layout/include_record_breakfast" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ThinBlack" />
+
+        <include layout="@layout/include_record_lunch" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ThinBlack" />
+
+        <include layout="@layout/include_record_dinner" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ThinBlack" />
+
+        <include layout="@layout/include_record_before_sleep" />
+    </LinearLayout>
+
+</RelativeLayout>

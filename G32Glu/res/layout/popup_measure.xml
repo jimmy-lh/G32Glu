@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_white_bg" >
+
+    <TextView
+        android:id="@+id/txt_measure_paper_before_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="在左上角插入试纸，将自动进入下一步"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_measure_paper_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_measure_paper_before_hint"
+        android:layout_centerInParent="true"
+        android:text="请插入试纸"
+        android:textSize="30dp" />
+
+</RelativeLayout>

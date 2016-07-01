@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android_custom="http://schemas.android.com/apk/res/com.bioland.g32glu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp" >
+
+    <com.bioland.view.roundprogressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android_custom:roundColor="#0072BB"
+        android_custom:roundProgressColor="#B8860B"
+        android_custom:roundWidth="15dp"
+        android_custom:textIsDisplayable="false" />
+
+    <com.bioland.view.roundprogressbar.RoundProgressBar
+        android:id="@+id/roundProgressBar2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android_custom:roundColor="#00000000"
+        android_custom:roundProgressColor="#CD3333"
+        android_custom:roundWidth="18dp"
+        android_custom:textIsDisplayable="false" />
+
+</FrameLayout>

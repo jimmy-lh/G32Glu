@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- android:fillAfter="true"用在这儿不知道怎么会没用,加到java代码才有用 -->
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0"
+        android:toAlpha="1" />
+
+    <translate
+        android:duration="1000"
+        android:fillAfter="true"
+        android:fromYDelta="0%p"
+        android:startOffset="500"
+        android:toYDelta="10%p" />
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="1"
+        android:startOffset="1600"
+        android:toAlpha="0" />
+</set>

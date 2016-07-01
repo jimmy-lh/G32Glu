@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/title_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/title_color"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/arrow_return"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/arrow_return"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/title_text_font"
+                android:text="@string/title_name" />
+
+            <!-- 主界面中测量按键及动态波纹 -->
+
+            <include layout="@layout/include_main_wave" />
+
+            <!-- 点击测量键后，main区域的显示 -->
+
+            <include layout="@layout/include_main_measure" />
+
+            <!-- 测量结束后显示的界面,圆圈和值等 -->
+
+            <include layout="@layout/include_main_result" />
+
+            <com.bioland.view.measure.DynamicWave
+                android:id="@+id/main_dynamic_wave"
+                android:layout_width="match_parent"
+                android:layout_height="304dp"
+                android:visibility="gone" />
+
+            <!-- 点击健康指导后，main区域的显示 -->
+
+            <include layout="@layout/include_main_health" />
+
+            <TextView
+                android:id="@+id/hint_text"
+                style="@style/hint_text_font"
+                android:layout_alignParentBottom="true"
+                android:text="@string/hint_normal_value" />
+        </RelativeLayout>
+
+        <!-- 四个菜单选项 -->
+
+        <include layout="@layout/include_main_menu" />
+
+        <!-- 用于弹窗菜单 -->
+
+        <TextView
+            android:id="@+id/hideView"
+            android:layout_width="match_parent"
+            android:layout_height="0sp" />
+    </LinearLayout>
+    <!-- 测量结束后显示的界面，提示信息和退出侧面按键 -->
+
+    <include layout="@layout/include_main_perform" />
+
+</FrameLayout>

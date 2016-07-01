@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/popup_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/include_more_two_dimension" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rim_bg"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_more_wlan" />
+
+            <View style="@style/line_horizontal_margin" />
+
+            <include layout="@layout/include_more_system" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rim_bg"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_more_update" />
+
+            <View style="@style/line_horizontal_margin" />
+
+            <include layout="@layout/include_more_recover" />
+
+            <View style="@style/line_horizontal_margin" />
+
+            <include layout="@layout/include_more_feedback" />
+
+            <View style="@style/line_horizontal_margin" />
+
+            <include layout="@layout/include_more_about" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

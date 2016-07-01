@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 斜线 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <rotate
+            android:fromDegrees="120"
+            android:pivotX="75%"
+            android:pivotY="40%"
+            android:toDegrees="120" >
+            <shape>
+                <stroke
+                    android:width="0.5dp"
+                    android:color="@color/ThinBlack" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

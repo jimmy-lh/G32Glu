@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 渐变色竖线 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="90"
+                android:centerColor="#888888"
+                android:endColor="#cccccc"
+                android:height="2px"
+                android:startColor="#cccccc" />
+        </shape>
+    </item>
+
+</layer-list>

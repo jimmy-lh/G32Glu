@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" >
+
+        <ImageView
+            android:id="@+id/arrow_return"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/arrow_return"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/title_text_font"
+            android:text="@string/remind_set_time" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/menu_bg" >
+
+        <FrameLayout
+            android:id="@+id/layout_wheel_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <com.bioland.view.timeselect.TimeSelectDayView
+                android:id="@+id/timeDayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bg" >
+
+        <Button
+            android:id="@+id/btn_remind_next"
+            style="@style/txt_remind_button"
+            android:background="@drawable/remind_btn_bg"
+            android:text="@string/remind_next" />
+    </FrameLayout>
+
+</LinearLayout>

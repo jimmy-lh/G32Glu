@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_measure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/wave1"
+        style="@style/wave_size" />
+
+    <ImageView
+        android:id="@+id/wave2"
+        style="@style/wave_size" />
+
+    <ImageView
+        android:id="@+id/wave3"
+        style="@style/wave_size" />
+
+    <ImageView
+        android:id="@+id/img_main_measure"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:src="@drawable/btn_main_measure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/measure_glu"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</FrameLayout>

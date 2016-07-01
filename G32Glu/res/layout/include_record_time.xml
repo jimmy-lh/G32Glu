@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        style="@style/txt_record_head"
+        android:text="@string/record_time_frame" />
+
+    <RelativeLayout
+        android:layout_width="28dp"
+        android:layout_height="24dp" >
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ThinBlack" />
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/diagonal_bg" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/ThinBlack" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/txt_record_head"
+        android:text="@string/record_date" />
+
+</LinearLayout>
