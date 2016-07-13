@@ -25,12 +25,15 @@ import com.bioland.widget.telephonymanager.MyTelephonyManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -80,6 +83,7 @@ public class MainActivity extends SerialPortActivity implements OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// getWindow().getDecorView().setSystemUiVisibility(10); // 平板全屏
+		setTranslucentStatus();
 		setContentView(R.layout.activity_main);
 		initView();
 		SingletonApplication.getInstance(this);// 创建单例类的实例
@@ -87,6 +91,22 @@ public class MainActivity extends SerialPortActivity implements OnClickListener 
 		// 初始化算法部分
 		initService();
 		initPopup();
+	}
+
+	/**
+	 * 设置状态栏背景状态
+	 */
+	private void setTranslucentStatus() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			Window win = getWindow();
+			WindowManager.LayoutParams winParams = win.getAttributes();
+			final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+			winParams.flags |= bits;
+			win.setAttributes(winParams);
+		}
+		SystemStatusManager tintManager = new SystemStatusManager(this);
+		tintManager.setStatusBarTintEnabled(true);
+		tintManager.setStatusBarTintResource(0);// 状态栏无背景
 	}
 
 	private void initView() {

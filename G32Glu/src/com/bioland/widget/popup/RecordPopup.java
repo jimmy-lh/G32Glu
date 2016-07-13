@@ -70,7 +70,8 @@ public class RecordPopup extends MyPopup implements ExpandableListView.OnChildCl
 	private GapDateUtil mGapDate;
 
 	public RecordPopup(Context context) {
-		super((Activity) context, 650);
+//		super((Activity) context, 650);
+		super((Activity) context, 620);
 		this.context = context;
 		initView();
 		getSaveDate();

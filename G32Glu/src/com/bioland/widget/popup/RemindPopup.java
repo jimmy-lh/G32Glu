@@ -61,7 +61,8 @@ public class RemindPopup extends MyPopup implements OnClickListener {
 	private final String TAG = "RemindPopup";
 
 	public RemindPopup(Context context) {
-		super((Activity) context, 650);
+//		super((Activity) context, 650);
+		super((Activity) context, 620);
 		this.context = context;
 		// 注册广播
 		registerBoradcastReceiver();

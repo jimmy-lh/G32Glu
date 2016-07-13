@@ -28,7 +28,8 @@ public class HealthPopup extends MyPopup implements OnClickListener {
 			"权威题库帮你更好的了解自己", "糖尿病治疗的“五架马车" };
 
 	public HealthPopup(Context context) {
-		super((Activity) context, 470);
+//		super((Activity) context, 470);
+		super((Activity) context, 440);
 		this.context = context;
 		initView();
 		view();

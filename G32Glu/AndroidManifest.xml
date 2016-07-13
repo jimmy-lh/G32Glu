@@ -34,7 +34,7 @@
         android:allowBackup="true"
         android:icon="@drawable/bioland_logo"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
         <activity
             android:name="com.bioland.activity.MainActivity"
             android:label="@string/app_name" >

@@ -17,7 +17,8 @@ public class MorePopup extends MyPopup implements OnClickListener {
 	LinearLayout twoInclude, wlanInclude, systemInclude, updateInclude, recoverInclude, feedbackInclude, aboutInclude;
 
 	public MorePopup(Context context) {
-		super((Activity) context, 650);
+//		super((Activity) context, 650);
+		super((Activity) context, 620);
 		this.context = context;
 		initView();
 		view();

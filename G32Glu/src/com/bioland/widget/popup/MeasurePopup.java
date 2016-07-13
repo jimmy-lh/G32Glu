@@ -20,7 +20,8 @@ public class MeasurePopup extends MyPopup implements OnClickListener {
 	private InsertTestPaperUtil mInsertTestPaperUtil;
 
 	public MeasurePopup(Context context) {
-		super((Activity) context, 270);
+		// super((Activity) context, 270);
+		super((Activity) context, 240);
 		this.context = context;
 		initView();
 		initMainUi();

@@ -1,12 +1,17 @@
 eclipse.preferences.version=1
 encoding//src/android_serialport_api/SerialPort.java=UTF-8
 encoding//src/com/bioland/activity/MainActivity.java=UTF-8
+encoding//src/com/bioland/activity/SystemStatusManager.java=UTF-8
 encoding//src/com/bioland/activity/measure/ResultActivity.java=UTF-8
 encoding//src/com/bioland/activity/remind/AlarmActivity.java=GBK
+encoding//src/com/bioland/activity/wlan/WifiAdmin.java=UTF-8
+encoding//src/com/bioland/activity/wlan/WifiConnListAdapter.java=UTF-8
+encoding//src/com/bioland/activity/wlan/WifiElement.java=UTF-8
 encoding//src/com/bioland/adapter/health/HealthBaseAdapter.java=UTF-8
 encoding//src/com/bioland/adapter/health/HealthSetAdapter.java=UTF-8
 encoding//src/com/bioland/adapter/remind/RemindAddTimeBaseAdapter.java=UTF-8
 encoding//src/com/bioland/serial/SerialPortActivity.java=UTF-8
 encoding//src/com/bioland/serial/Unpack.java=UTF-8
+encoding//src/com/bioland/utils/ScreenUtils.java=UTF-8
 encoding//src/com/bioland/view/measure/DynamicWave.java=UTF-8
 encoding/<project>=UTF-8
