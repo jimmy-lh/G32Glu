@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="血糖过低,请注意保养"
+            android:text="血糖正常，请注意保持！"
             android:textColor="@color/White"
             android:textSize="25sp" />
     </FrameLayout>

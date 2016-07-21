@@ -1,8 +1,10 @@
 package com.bioland.widget.popup;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
+import com.bioland.activity.remind.AlarmActivity;
 import com.bioland.activity.remind.SetDayFrequencyActivity;
 import com.bioland.adapter.BaseAdapterItem;
 import com.bioland.adapter.remind.RemindAddTimeBaseAdapter;
@@ -17,11 +19,18 @@ import com.bioland.view.timeselect.TimeSelectHourView;
 import com.bioland.view.timeselect.TimeSelectMinuteView;
 import com.bioland.widget.sharedpreferences.MyPreference;
 
+import android.R.integer;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.MediaPlayer;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +38,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class RemindPopup extends MyPopup implements OnClickListener {
@@ -61,7 +71,7 @@ public class RemindPopup extends MyPopup implements OnClickListener {
 	private final String TAG = "RemindPopup";
 
 	public RemindPopup(Context context) {
-//		super((Activity) context, 650);
+		// super((Activity) context, 650);
 		super((Activity) context, 620);
 		this.context = context;
 		// 注册广播
@@ -146,9 +156,49 @@ public class RemindPopup extends MyPopup implements OnClickListener {
 						"设置频率:" + intent.getStringExtra(INTENT_TIME_DAY), String.valueOf(mAlarmCount)));
 		// 刷新listView
 		mAdapter.notifyDataSetChanged();
+		setAlarmClock(Integer.parseInt(TimeSelectHourView.mDataContext),
+				Integer.parseInt(TimeSelectMinuteView.mDataContext));
 
 		if (mTextRemindHint.getVisibility() != View.GONE)
 			mTextRemindHint.setVisibility(View.GONE);
+	}
+
+	AlarmManager aManager;
+	MediaPlayer alarmMusic;
+
+	private void setAlarmClock(int hourOfDay, int minute) {
+		// 获取AlarmManager对象
+		aManager = (AlarmManager) context.getSystemService(Service.ALARM_SERVICE);
+		// 指定启动AlarmActivity组件
+		Intent intent = new Intent(context, AlarmActivity.class);
+		// 创建PendingIntent对象
+		PendingIntent pi = PendingIntent.getActivity(context, 0, intent, 0);
+		Calendar c = Calendar.getInstance();
+		// 根据用户选择时间来设置Calendar对象
+		c.set(Calendar.HOUR, hourOfDay);
+		c.set(Calendar.MINUTE, minute);
+		// 设置AlarmManager将在Calendar对应的时间启动指定组件
+		aManager.set(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pi);
+		// 显示闹铃设置成功的提示信息
+		Toast.makeText(context, "闹铃设置成功啦.." + hourOfDay + ":" + minute, Toast.LENGTH_SHORT).show();
+//		alarmMusic = MediaPlayer.create(context, R.raw.alarm);
+//		alarmMusic.setLooping(true);
+//		// 播放音乐
+//		alarmMusic.start();
+//		// 创建一个对话框
+//		new AlertDialog.Builder(context).setTitle("闹钟")
+//		.setMessage("闹钟响了,Go！Go！Go！")
+//		.setPositiveButton("确定", new DialogInterface.OnClickListener()
+//		{
+//			@Override
+//			public void onClick(DialogInterface dialog, int which)
+//			{
+//				// 停止音乐
+//				alarmMusic.stop();
+//				// 结束该Activity
+////				AlarmActivity.this.finish();
+//			}
+//		}).show();
 	}
 
 	// 广播接收

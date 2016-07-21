@@ -83,7 +83,7 @@ public class MainActivity extends SerialPortActivity implements OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// getWindow().getDecorView().setSystemUiVisibility(10); // 平板全屏
-		setTranslucentStatus();
+		setTranslucentStatus();// 系统一体化状态栏
 		setContentView(R.layout.activity_main);
 		initView();
 		SingletonApplication.getInstance(this);// 创建单例类的实例

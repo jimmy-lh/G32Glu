@@ -54,6 +54,8 @@
         </activity>
         <activity android:name="com.bioland.activity.wlan.WLanActivity" >
         </activity>
+        <activity android:name="com.bioland.activity.remind.AlarmActivity" >
+        </activity>
     </application>
 
 </manifest>
